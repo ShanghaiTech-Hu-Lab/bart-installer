@@ -4,7 +4,16 @@ This README provides instructions to install and compile `BART` from the source 
 
 ## Prerequisites
 
-Before proceeding, ensure that you have `conda` installed on your system. If you don't have it yet, you can install it by following the instructions on the [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/) website.
+- Ensure that `conda` is available (instructions on the [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/)
+
+- Requires CUDA **Driver** >= 12.3 (see `nvidia-smi` and then you should see `CUDA Version: 12.3` (or higher) in the output)
+
+### Why is the CUDA driver required?
+The CUDA driver is critical for running CUDA-enabled programs because it:
+
+- Handles communication between the GPU and the operating system: The driver acts as the intermediary between your GPU hardware and the system.
+- Enables execution of CUDA programs: Even if you have the CUDA Toolkit installed, any program using CUDA APIs must rely on the driver to send instructions to the GPU.
+- Ensures compatibility: NVIDIA GPU drivers are generally backward-compatible with older versions of the CUDA Toolkit. However, using a driver version that is older than the required CUDA version will result in compatibility issues.
 
 ---
 
@@ -12,14 +21,14 @@ Before proceeding, ensure that you have `conda` installed on your system. If you
 
 1. **Install Conda**
 
-   If `conda` is not already installed on your machine:
-   - Download and install Miniconda or Anaconda from their respective websites.
-   - Follow the installation instructions for your operating system.
+If `conda` is not already installed on your machine:
+- Download and install Miniconda or Anaconda from their respective websites.
+- Follow the installation instructions for your operating system.
 
-   Once installed, verify the installation by running:
-   ```bash
-   conda --version
-   ```
+Once installed, verify the installation by running:
+```bash
+conda --version
+```
    
 2. Clone the Repository Use git to clone the repository to your local machine:
 

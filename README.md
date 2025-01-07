@@ -4,7 +4,7 @@ This README provides instructions to install and compile `BART` from the source 
 
 ## Prerequisites
 
-- Ensure that `conda` is available (instructions on the [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/)
+- Ensure that `conda` is available (instructions on the [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/))
 
 - Requires CUDA **Driver** >= 12.3 (run `nvidia-smi` and then you should see `CUDA Version: 12.3` (or higher) in the output)
 

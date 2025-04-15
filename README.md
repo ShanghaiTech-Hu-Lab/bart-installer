@@ -33,8 +33,8 @@ conda --version
 2. Clone the Repository Use git to clone the repository to your local machine:
 
 ```bash
-git clone git@github.com:ShanghaiTech-Hu-Lab/bart-guide.git
-cd bart-guide
+git clone https://github.com/ShanghaiTech-Hu-Lab/bart-installer.git
+cd bart-installer
 ```
 
 3. Build the Project Run the make command to compile the project:
@@ -45,10 +45,11 @@ make
 
 This will compile the source code and build the BART binary.
 
-4. Verify Compilation If the compilation is successful, the BART binary will be available under the ./bart/ directory:
+4. Verify Compilation If the compilation is successful, the BART binary will be available under the ./bart/ and ./usr/ directory:
 
 ```bash
 ls ./bart/
+ls ./usr/
 ```
 
 You should see the BART executable file "bart" in this directory.

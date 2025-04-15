@@ -21,4 +21,8 @@ make
 ```
 **Note** that this script creates a conda environment named `bart_installer`, make sure that name **is NOT USED**.
 
+After the compilation is complete, the `bart-installer/bart/` directory will be generated. You can move it to any location where you want to install it.
 
+Once you have decided on the location, you need to set the `BART_TOOLBOX_PATH` environment variable to the path of `bart-installer/bart/`. It is recommended to modify the environment variable in your `.bashrc` file to ensure it is available in every shell session. 
+
+In addition, if you want to use bart in the command line (e.g. `$ bart pics`), make sure that the `PATH` includes the path where `bart-installer/bart/bart`(executable  file) is located.

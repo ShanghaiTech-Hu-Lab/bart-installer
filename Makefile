@@ -85,6 +85,6 @@ build:
 
 clean:
 	@echo "Cleaning up..."
-	@rm -f $(SRC_FILE_NAME)
-	@conda deactivate
-	@conda env remove -n bart_installer
+	@rm -f $(SRC_FILE_NAME)\
+	@source $(shell conda info --base)/etc/profile.d/conda.sh &&\
+	conda env remove -n bart_installer

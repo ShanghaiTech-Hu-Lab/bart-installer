@@ -5,13 +5,13 @@ channels:
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
 dependencies:
-  - _libgcc_mutex
-  - _openmp_mutex
-  - _sysroot_linux-64_curr_repodata_hack
-  - binutils_impl_linux-64
-  - blas
-  - clapack
-  - cuda
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - _sysroot_linux-64_curr_repodata_hack=3
+  - binutils_impl_linux-64=2.40
+  - blas=1.0
+  - clapack=3.2.1
+  - cuda=12.3.2
   - cuda-cccl
   - cuda-cccl_linux-64
   - cuda-command-line-tools
@@ -57,15 +57,15 @@ dependencies:
   - cuda-visual-tools
   - cudnn
   - fftw
-  - gcc
-  - gcc_impl_linux-64
+  - gcc=12.4.0
+  - gcc_impl_linux-64=12.4.0
   - gds-tools
-  - gxx
-  - gxx_impl_linux-64
+  - gxx=12.4.0
+  - gxx_impl_linux-64=12.4.0
   - kernel-headers_linux-64
   - ld_impl_linux-64
-  - libblas
-  - libcblas
+  - libblas=3.9.0
+  - libcblas=3.9.0
   - libcublas
   - libcublas-dev
   - libcublas-static
@@ -84,9 +84,9 @@ dependencies:
   - libcusparse
   - libcusparse-dev
   - libcusparse-static
-  - libgcc
-  - libgcc-devel_linux-64
-  - libgcc-ng
+  - libgcc=14.2.0
+  - libgcc-devel_linux-64=12.4.0
+  - libgcc-ng=14.2.0
   - libgfortran-ng
   - libgfortran4
   - libgfortran5
@@ -104,9 +104,9 @@ dependencies:
   - libopenblas
   - libpng
   - libsanitizer
-  - libstdcxx
-  - libstdcxx-devel_linux-64
-  - libstdcxx-ng
+  - libstdcxx=14.2.0
+  - libstdcxx-devel_linux-64=12.4.0
+  - libstdcxx-ng=14.2.0
   - make
   - mpi
   - mpich

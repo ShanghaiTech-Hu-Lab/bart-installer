@@ -19,7 +19,7 @@ all: create_env link_sources download_source build
 create_env:
 	@if ! conda env list | grep -w "^$(CONDA_ENV)$$" > /dev/null; then \
 		echo "Creating Conda environment $(CONDA_ENV)..."; \
-		conda env create -f $(ENV_YAML_PATH); \
+		conda env create -f $(ENV_YAML_PATH) -n bart_installer; \
 		. "$(shell conda info --base)/etc/profile.d/conda.sh" && conda activate $(CONDA_ENV); \
 		if [ $$? -ne 0 ]; then \
 			echo "Failed to activate the Conda environment."; \

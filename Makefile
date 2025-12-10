@@ -80,11 +80,12 @@ build:
 	cd $(SRC_OUTPUT_DIR) && \
 	export CONDA_ENV_PATH=$$(conda info --json | grep -Po '"active_prefix":.*?"\K[^"]+' | head -n 1) && \
 	export INSTALL_DIR=$(INSTALL_DIR) && \
+	export OMPI_CC=/usr/bin/gcc-11 && \
 	make && \
 	make install
 
 clean:
 	@echo "Cleaning up..."
-	@rm -f $(SRC_FILE_NAME)\
-	@source $(shell conda info --base)/etc/profile.d/conda.sh &&\
+	@rm -f $(SRC_FILE_NAME)
+	@source $(shell conda info --base)/etc/profile.d/conda.sh && \
 	conda env remove -n bart_installer

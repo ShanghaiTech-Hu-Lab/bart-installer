@@ -57,6 +57,7 @@ dependencies:
   - cuda-visual-tools
   - cudnn
   - fftw
+  # - openmpi
   - gcc=12.4.0
   - gcc_impl_linux-64=12.4.0
   - gds-tools

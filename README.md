@@ -12,6 +12,8 @@ If you are interested in `BART`, please visit: [https://github.com/mrirecon/bart
 
 - Requires CUDA **Driver** >= 12.3 (run `nvidia-smi` and then you should see `CUDA Version: 12.3` (or higher) in the output)
 
+- Make sure mpicc is available, and **gcc11** is used as the default compiler.
+
 ## Install
 
 ```bash
